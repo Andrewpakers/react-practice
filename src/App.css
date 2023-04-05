@@ -1,0 +1,52 @@
+body {
+    padding: 10px;
+  }
+  
+  .contentContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contentContainerColumn {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 100px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+  }
+  
+  button {
+    width: fit-content;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  

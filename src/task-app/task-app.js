@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Overview from "./components/overview";
 import TaskInput from './components/input';
+import './styles/task-app.css'
 
 export default function TaskApp() {
     const [tasks, setTasks] = useState([]);
