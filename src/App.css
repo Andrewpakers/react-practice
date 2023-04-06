@@ -15,7 +15,14 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+  ol {
+    padding: 0px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
   .container {
     background-color: lightgray;
     border-radius: 15px;
@@ -33,12 +40,14 @@ body {
     gap: 10px;
     width: 200px;
   }
+
   
   button {
     width: fit-content;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
+    margin: 10px;
   }
   input {
     background-color: transparent;

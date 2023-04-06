@@ -1,6 +1,8 @@
 import './styles/cv-class-components.css';
 import React, { Component } from 'react';
 import GeneralInfo from './components/general-info';
+import Education from './components/education';
+import Experience from './components/experience';
 // import Education from './components/education';
 // import Experience from './components/experience';
 
@@ -16,6 +18,12 @@ export default class CvClassComponents extends Component {
             <div className='contentContainerColumn'>
                 <div className='container'>
                     <GeneralInfo />
+                </div>
+                <div className='container'>
+                    <Education />
+                </div>
+                <div className='container'>
+                    <Experience />
                 </div>
             </div>
         );
