@@ -1,61 +1,130 @@
+:root {
+  --navbar-height: 100px;
+  --element-1-bkgnd: lightcoral;
+  --element-2-bkgnd: coral;
+  --element-3-bkgnd: crimson;
+  background-color: var(--element-2-bkgnd);
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
 body {
-    padding: 10px;
-  }
-  
-  .contentContainer {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .contentContainerColumn {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  ol {
     padding: 0px;
-  }
-  li {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-  .container {
-    background-color: lightgray;
-    border-radius: 15px;
-    padding: 100px;
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 200px;
-  }
+    margin: 0px;
+    height: 100%;
+    overflow: auto;
+}
+.cardContainer {
+  border: 5px solid var(--element-3-bkgnd);
+  border-radius: 15px;
+  padding: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 200px;
+  width: auto;
+  border-radius: 15px;
+}
+.navbar {
+  background-color: var(--element-1-bkgnd);
+  height: var(--navbar-height);
+  display: flex;
+  padding: 10px;
+  border-bottom: 5px solid var(--element-3-bkgnd);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 10px;
+  margin-left: 0px;
+}
+.scoreboard {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 200px;
+  display: flex;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.number {
+  margin-left: auto;
+}
+.gameboard {
+  height: fit-content;
+  width: 100vw;
+  background-color: var(--element-2-bkgnd);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  padding-top: 20px;
+}
 
-  
-  button {
-    width: fit-content;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    margin: 10px;
-  }
-  input {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-  }
-  
-  .invisible {
-    visibility: hidden;
-  }
-  
+.contentContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contentContainerColumn {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ol {
+  padding: 0px;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.container {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 100px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+
+button {
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+}
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.invisible {
+  visibility: hidden;
+}
