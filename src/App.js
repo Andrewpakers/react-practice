@@ -1,13 +1,16 @@
 import './App.css';
-import TaskApp from './task-app/task-app';
-import CvClassComponents from './cv-class-components/cv-class-components';
-import CvFunctionComponents from './cv-function-components/cv-function-components';
-import MemoryGame from './memory-game/memory-game';
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <MemoryGame />
+    <div className='contentContainerColumn'>
+      <h1>My practice React apps</h1>
+      <a href='./task-app'>Task App</a>
+      <a href='./memory-game'>Memory Game</a>
+      <a href='./cvclass'>CV app - Class Components</a>
+      <a href='./cvfunction'>CV app - Functional Components</a>
+      <a href='./shopping-cart'>Shopping Cart</a>
     </div>
   );
-}
+};
+
+export default App;

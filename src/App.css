@@ -1,8 +1,8 @@
 :root {
   --navbar-height: 100px;
-  --element-1-bkgnd: lightcoral;
-  --element-2-bkgnd: coral;
-  --element-3-bkgnd: crimson;
+  --element-1-bkgnd: lightgray;
+  --element-2-bkgnd: white;
+  --element-3-bkgnd: gray;
   background-color: var(--element-2-bkgnd);
 }
 html {
@@ -22,6 +22,7 @@ body {
   width: fit-content;
   height: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -36,6 +37,21 @@ img {
   display: flex;
   padding: 10px;
   border-bottom: 5px solid var(--element-3-bkgnd);
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: auto;
+  padding: 20px;
+}
+.navigation-button {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.navigation-button:hover {
+  font-weight: bolder;
 }
 .title {
   display: flex;
@@ -84,6 +100,9 @@ h1 {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 15px;
 }
 ol {
   padding: 0px;
@@ -93,8 +112,16 @@ li {
   flex-direction: column;
   gap: 7px;
 }
+a {
+  color: var(--element-3-bkgnd);
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
 .container {
-  background-color: lightgray;
+  background-color: var(--element-2-bkgnd);
+  border: 2px solid var(--element-3-bkgnd);
   border-radius: 15px;
   padding: 100px;
   width: fit-content;
@@ -110,18 +137,48 @@ form {
   gap: 10px;
   width: 200px;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 25px 0;
+}
+td {
+  padding: 10px 0;
+}
 
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 button {
   width: fit-content;
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid var(--element-3-bkgnd);
   border-radius: 5px;
   margin: 10px;
 }
 input {
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid var(--element-3-bkgnd);
   border-radius: 5px;
 }
 
