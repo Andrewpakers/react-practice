@@ -37,7 +37,22 @@ img {
   display: flex;
   padding: 10px;
   border-bottom: 5px solid var(--element-3-bkgnd);
+  position: sticky;
+  top: 0px;
 }
+.footer {
+  background-color: var(--element-1-bkgnd);
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  border-top: 5px solid var(--element-3-bkgnd);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: end;
+  align-items: center;
+}
+
 .navigation {
   display: flex;
   gap: 20px;
@@ -175,6 +190,10 @@ button {
   border: 2px solid var(--element-3-bkgnd);
   border-radius: 5px;
   margin: 10px;
+}
+button:active {
+  background-color: var(--element-3-bkgnd);
+  color: var(--element-2-bkgnd)
 }
 input {
   background-color: transparent;

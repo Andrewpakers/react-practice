@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{userID}/cart {
+    	allow read: if userID == request.auth.uid && request.auth != null;
+      allow write: if userID == request.auth.uid && request.auth != null;
+    }
+    match /{userID}/highScore {
+    	allow read: if userID == request.auth.uid && request.auth != null;
+      allow write: if userID == request.auth.uid && request.auth != null;
+    }
+  }
+}

@@ -10,42 +10,49 @@ import MemoryGame from '../memory-game/memory-game';
 import ShoppingCart from "../shopping-cart/shopping-cart";
 import Cart from "../shopping-cart/components/cart";
 import Storefront from "../shopping-cart/components/storefront";
+import Directory from "../components/directory";
 
 const router = createBrowserRouter([
   {
     path: '/',
     element:<App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: '/task-app',
-    element:<TaskApp />
-  },
-  {
-    path: '/cvclass',
-    element:<CvClassComponents />
-  },
-  {
-    path: '/cvfunction',
-    element:<CvFunctionComponents />
-  },
-  {
-    path: '/memory-game',
-    element:<MemoryGame />
-  },
-  {
-    path: '/shopping-cart',
-    element:<ShoppingCart />,
     children: [
       {
-        path: "/shopping-cart/cart",
-        element: <Cart />,
+        path: "/",
+        element: <Directory />,
       },
       {
-        path: "/shopping-cart",
-        element: <Storefront />,
+        path: '/task-app',
+        element:<TaskApp />
+      },
+      {
+        path: '/cvclass',
+        element:<CvClassComponents />
+      },
+      {
+        path: '/cvfunction',
+        element:<CvFunctionComponents />
+      },
+      {
+        path: '/memory-game',
+        element:<MemoryGame />
+      },
+      {
+        path: '/shopping-cart',
+        element:<ShoppingCart />,
+        children: [
+          {
+            path: "/shopping-cart/cart",
+            element: <Cart />,
+          },
+          {
+            path: "/shopping-cart",
+            element: <Storefront />,
+          },
+        ],
       },
     ],
+    errorElement: <ErrorPage />,
   },
 ]);
 
